@@ -1,22 +1,40 @@
 @import './header.css';
+@import '/experience.css';
 
 :root {
     /* --primarly-color: #778da9; */
     --primarly-color: #979dac;
     --secondary-color: #e0e1dd;
-    --font-size: 16px;
+    --font-size: 14px;
     scroll-behavior: smooth;
 }
 
 body {
+    /* position: relative; */
     margin: 0;
     padding: 0;
+    /* height: 100%; */
     font-family: inter;
     background-color: #0d1b2a;
     color: var(--primarly-color);
     box-sizing: border-box;
     font-size: var(--font-size);
+    /* overflow: hidden; */
 }
+
+.mousepoint {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    inset: 0;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(600px,rgba(29, 78, 216, 0.15), transparent 80%);
+    filter: blur(70px);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}  
 
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -56,27 +74,7 @@ a {
     justify-content: space-between;
 }
 
-.right_side_container{
-    padding: 96px 0;
-    max-width: calc(100% - 550px);
-    margin-left: auto;
-}
 
-.main_text {
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-.about_section{
-    margin-bottom: 4rem;
-}
-
-.about_section::before {
-    content: '';
-    display: block;
-    height: 96px;
-    margin-top: -96px;
-}
 
 
 
