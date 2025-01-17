@@ -1,0 +1,159 @@
+
+.main_block{
+    width: 52%;
+}
+
+.main_text {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    letter-spacing: .0275rem;
+    line-height: 1.6;
+}
+
+.about_section{
+    padding-top: 96px;
+}
+
+.experience_wrapper::before {
+    content: '';
+    display: block;
+    height: 96px;
+}
+
+.experience_item {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 3rem;
+    transition: all .3s ease;
+}
+
+.experience_item_wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.experience_title_wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.experience_item_wrapper_h3 {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.experience_item_date {
+    grid-column: 1 / 4;
+    font-size: .85rem;
+    font-weight: 500;
+    letter-spacing: .035rem;
+    text-transform: uppercase;
+}
+
+.experience_item_main {
+    grid-column: 4 / 13;
+}
+
+.experience_item-text {
+    margin-top: 1rem;
+    color: rgba(151, 157, 172, 1);
+    line-height: 1.5;
+}
+
+.experience_item-list {
+    margin-top: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3rem;
+}
+
+.experience_item-unit {
+    padding: .25rem .75rem;
+    margin-top: .5rem;
+    font-size: .75rem;
+    background-color: rgb(19 78 74);
+    border-radius: 15px;
+    color: var(--teal-color);
+}
+
+.resume_block {
+    margin-bottom: 3rem;
+}
+.resume_block_link {
+    font-weight: 800;
+    color: white;
+}
+
+.resume_block:hover .resume_block_link {
+    color: var(--teal-color);
+}
+
+.resume_block:hover
+.svgArrow {
+    stroke: var(--teal-color);
+}
+
+.resume_block:hover
+.svgIconArrow {
+    transform: translate(2px, -2px);
+}
+
+.experience_item_span {
+position: absolute;
+top: -15px;
+left:-15px;
+width: calc(100% + 30px);
+height: calc(100% + 30px);
+border-radius: 8px;
+background-color: transparent;
+transition: all .5s ease;
+z-index: -1;
+}
+
+.svgIconArrow {
+    transition: all .2s ease;
+}
+
+.experience_list:hover 
+.experience_item {
+    opacity: .5;
+}
+
+.experience_list:hover 
+.experience_item:hover {
+    opacity: 1;
+}
+
+.experience_item:hover 
+.experience_item_span {
+    background-color: rgba(50, 75, 104, 0.3);
+    box-shadow: inset 1px 1px 1px rgba(148,163,184,0.3), inset -1px -1px 1px rgba(148,163,184,0.3);
+}
+
+.experience_list:hover 
+.experience_item-text{
+    color: rgba(151, 157, 172, 1);
+}
+
+.experience_item:hover 
+.experience_item_wrapper_h3 {
+    color: var(--teal-color);
+}
+
+.experience_item:hover 
+.svgArrow {
+    stroke: var(--teal-color);
+}
+
+.experience_item:hover 
+.svgIconArrow {
+    transform: translate(2px, -2px);
+}
+
+
+
+
