@@ -166,7 +166,6 @@ h2 {
         margin-bottom: 3rem;
     }
     .title_mobile_link {
-        /* display: none; */
         pointer-events: none;
     }
     
