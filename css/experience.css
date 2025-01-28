@@ -36,7 +36,6 @@
 
 .experience_title_wrapper {
     display: flex;
-    gap: 10px;
 }
 
 .experience_item_wrapper_h3 {
@@ -44,6 +43,10 @@
     color: white;
     font-weight: 500;
     line-height: 1;
+}
+
+.experience_item_link_h3 {
+color: inherit;
 }
 
 .experience_item_date {
@@ -115,7 +118,17 @@ z-index: -1;
 }
 
 .svgIconArrow {
+    margin-left: 10px;
     transition: all .2s ease;
+}
+
+.title_mobile_link {
+    display: block;
+    position: absolute;
+    top: -15px;
+    left:-15px;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
 }
 
 .experience_list:hover 

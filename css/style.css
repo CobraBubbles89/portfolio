@@ -59,6 +59,8 @@ ul {
 }
 
 a {
+    margin: 0;
+    padding: 0;
     color: var(--primarly-color);
     text-decoration: none;
 }
@@ -140,8 +142,6 @@ h2 {
         padding-top: 32px;
     }
     .container {
-        /* padding: 0 64px;
-        padding: 0 64px; */
         width: auto;
     }
     .nav_link {
@@ -164,6 +164,10 @@ h2 {
     }
     .main_text_last_item {
         margin-bottom: 3rem;
+    }
+    .title_mobile_link {
+        /* display: none; */
+        pointer-events: none;
     }
     
 }
